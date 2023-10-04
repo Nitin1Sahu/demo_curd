@@ -1,8 +1,3 @@
-<?php
-session_start();
-// ECHO $_SESSION['val2'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +7,7 @@ session_start();
     <title>Crud - Khushbu</title>
 </head>
 <body>
-    <h1><?php ECHO $_SESSION['val3']?></h1>
+    <h1>Sign Up</h1>
     <form action="./action/formAction.php" method="post">
         <label for="fname">First Name</label>
         <input type="text" name="fname" id="fname" placeholder="Enter your first name...">

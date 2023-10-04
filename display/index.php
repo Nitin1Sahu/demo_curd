@@ -26,6 +26,7 @@ while($rawdata = $exe->fetch_assoc()) {
       <th scope="col">Last Name</th>
       <th scope="col">Contact</th>
       <th scope="col">Email</th>
+      <th scope="col">Update</th>
     </tr>
   </thead>
   <tbody>
@@ -36,20 +37,10 @@ while($rawdata = $exe->fetch_assoc()) {
       <td><?php ECHO $user['lname'];?></td>
       <td><?php ECHO $user['contact'];?></td>
       <td><?php ECHO $user['email'];?></td>
+      <td><a href="../operation/update.php?user=<?php ECHO $user['id'];?>"><button>Edit</button></a></td>
+      
     </tr>
    <?php }?>
-
-   <?php 
-   foreach($data as $user) {
-    ECHO "<tr>";
-    ECHO "<td>" . $user['id'] . "</td>";
-    ECHO "<td>" . $user['fname'] . "</td>";
-    ECHO "<td>" . $user['lname'] . "</td>";
-    ECHO "<td>" . $user['contact'] . "</td>";
-    ECHO "<td>" . $user['email'] . "</td>";
-    ECHO "</tr>";
-   }
-   ?>
   </tbody>
 </table>
     
